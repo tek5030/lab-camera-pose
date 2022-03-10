@@ -3,12 +3,12 @@
 #include <string>
 
 /// \brief Main Lab program.
-class Lab5
+class CameraPoseLab
 {
 public:
   /// \brief Constructs the lab.
   /// \param data_path Optional path to dataset.
-  explicit Lab5(const std::string& data_path = "../data/");
+  explicit CameraPoseLab(const std::string& data_path = "../data/");
 
   /// \brief Runs the lab.
   void run();

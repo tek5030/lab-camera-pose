@@ -19,11 +19,11 @@ struct DataElement
   Attitude body_attitude_in_geo;
 };
 
-/// \brief Represents the dataset for Lab 5.
+/// \brief Represents the dataset for the lab.
 class Dataset
 {
 public:
-  /// \brief Constructs a Lab 5 dataset.
+  /// \brief Constructs a dataset.
   /// \param folder_name the folder where the dataset resides.
   explicit Dataset(const std::string& folder_name)
   : folder_name_(folder_name)

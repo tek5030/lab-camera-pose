@@ -1,11 +1,11 @@
-#include "lab_5.h"
+#include "camera_pose_lab.h"
 #include <iostream>
 
 int main()
 {
   try
   {
-    Lab5 lab;
+    CameraPoseLab lab;
     lab.run();
   }
   catch (const std::exception& e)

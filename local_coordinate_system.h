@@ -14,9 +14,9 @@ public:
   explicit LocalCoordinateSystem(const GeodeticPosition& origin);
 
   /// \brief Transforms geodetic position and attitude to pose in local coordinate system.
-  /// \param geo_pos Geodetic position
-  /// \param att_ned_body Attitude
-  Sophus::SE3d toLocalPose(const GeodeticPosition& geo_pos, const Sophus::SO3d& att_ned_body) const;
+  /// \param position_geodetic_body Geodetic position
+  /// \param orientation_ned_body Attitude
+  Sophus::SE3d toLocalPose(const GeodeticPosition& position_geodetic_body, const Sophus::SO3d& orientation_ned_body) const;
 
 private:
   GeographicLib::LocalCartesian local_;

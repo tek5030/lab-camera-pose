@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.5.1 )
 
-project(lab_5_geometry)
+project(lab_camera_pose)
 
 # Compiler flags
 if (MSVC)
@@ -27,8 +27,8 @@ add_executable(${PROJECT_NAME}
   geodetic_position.cpp
   intrinsics.h
   intrinsics.cpp
-  lab_5.h
-  lab_5.cpp
+  camera_pose_lab.h
+  camera_pose_lab.cpp
   local_coordinate_system.h
   local_coordinate_system.cpp
   perspective_camera_model.h
