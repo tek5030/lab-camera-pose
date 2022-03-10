@@ -2,7 +2,7 @@
 We will as usual start by presenting an overview of the method and the contents of this project.
 
 ## Holmenkollen dataset
-In the ["data" directory](../data), we are given a dataset of 110 images taken from a camera held by hand inside a helicopter.
+In the ["data" directory](../data), we are given a dataset of 110 images taken from a handheld camera inside a helicopter.
 
 For each image, we also have the following data:
 - The intrinsic camera calibration.
