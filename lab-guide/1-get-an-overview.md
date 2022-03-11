@@ -2,17 +2,17 @@
 We will as usual start by presenting an overview of the method and the contents of this project.
 
 ## Holmenkollen dataset
-In the [`data` directory](https://github.com/tek5030/lab_05/tree/master/data), we are given a dataset of 110 images taken from a camera held by hand inside a helicopter.
+In the ["data" directory](../data), we are given a dataset of 110 images taken from a handheld camera inside a helicopter.
 
 For each image, we also have the following data:
 - The intrinsic camera calibration.
-- Navigation data: The pose of the helicopter (body) in geographical coordinates.
+- Navigation data: The pose of the helicopter (which we will call "body") in [geographical coordinates](https://en.wikipedia.org/wiki/Geographic_coordinate_system) (latitude, longitude and altitude).
 - Camera pose measurements: The pose of the camera relative to the helicopter.
 
-We have also provided a data reader that we will use.
+We have provided a data reader that we will use to extract these data.
 
 ## Lab overview
-Our job today is to represent and visualize these camera poses in a common coordinate system. 
+Our job today is to represent and visualise these camera poses in a common coordinate system. 
 We will then project the geographical coordinate of a light pole into the images, so that we can find its pixel position in each image.
 
 The main steps in today's lab are:
@@ -26,11 +26,11 @@ We have chosen to distribute the code on the following files:
 
 - *main.cpp*
   
-  Starts lab 5, catches any exceptions and prints their error message on the console.
+  Starts the lab, catches any exceptions and prints their error message on the console.
   
-- *lab_5.h, lab_5.cpp*
+- *camera_pose_lab.h, camera_pose_lab.cpp*
   
-  Runs the lab 5 loop.
+  Runs the main loop.
   You will implement much of this loop.
   
 - *attitude.h, attitude.cpp*
@@ -54,7 +54,7 @@ We have chosen to distribute the code on the following files:
 - *intrinsics.h, intrinsics.cpp*
   
   Represents the intrinsic calibration parameters for a camera. 
-  You will be responsible for converting these to the camera calibration matrix **K** and an [OpenCV distortion coefficient vector](https://docs.opencv.org/4.0.1/d9/d0c/group__calib3d.html).
+  You will be responsible for converting these to the camera calibration matrix **K** and an [OpenCV distortion coefficient vector](https://docs.opencv.org/4.5.5/d9/d0c/group__calib3d.html).
 
 - *local_coordinate_system.h, local_coordinate_system.cpp*
   
@@ -67,7 +67,7 @@ We have chosen to distribute the code on the following files:
 
 - *viewer_3d.h, viewer_3d.cpp*
   
-  Uses the OpenCV module [viz3d](https://docs.opencv.org/4.0.1/d1/d19/group__viz.html) to visualize results in 3D.
+  Uses the OpenCV module [viz3d](https://docs.opencv.org/4.5.5/d1/d19/group__viz.html) to visualize results in 3D.
 
 Please continue to the [next step](2-from-geographical-coordinates-to-pixels.md) to get started!
 

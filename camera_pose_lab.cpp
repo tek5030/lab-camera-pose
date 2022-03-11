@@ -1,4 +1,4 @@
-#include "lab_5.h"
+#include "camera_pose_lab.h"
 
 #include "dataset.h"
 #include "local_coordinate_system.h"
@@ -6,12 +6,12 @@
 #include "opencv2/highgui.hpp"
 #include "opencv2/imgproc.hpp"
 
-Lab5::Lab5(const std::string& data_path)
+CameraPoseLab::CameraPoseLab(const std::string& data_path)
   : data_path_{data_path}
   , window_name_{"World point in camera"}
 {}
 
-void Lab5::run()
+void CameraPoseLab::run()
 {
   // Set up dataset.
   Dataset dataset{data_path_};
