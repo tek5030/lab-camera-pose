@@ -20,16 +20,13 @@ Please try to solve the lab with help from others instead of just jumping straig
 Start the lab by going to the [first step](lab-guide/1-get-an-overview.md).
 
 ## Prerequisites
-- [Ensure Conan is installed on your system][conan], unless you are not on a lab computer.
-- Install project dependencies using conan:
 
-   ```bash
-   # git clone https://github.com/tek5030/lab-camera-pose.git
-   # cd lab-camera-pose
+For this lab, we can unfortunately not rely on conan to install all required OpenCV modules (namely the `viz` module for 3D visualization). You have a few other options:
 
-   conan install . --install-folder=build --build=missing
-   ```
-- When you configure the project in CLion, remember to set `build` as the _Build directory_, as described in [lab_intro].
+- Solve the [python lab](https://github.com/tek5030/lab-camera-pose-py)
+- Use the lab computers
+- Install OpenCV using [homebrew](https://brew.sh/) (option for mac and linux). (See also [Getting started on MacOS](https://tek5030.github.io/tutorial/macos.html).)
+- Rely on virtualbox and our prepared linux image with dependencies preinstalled (see [Canvas: Setting up your computer for the labs](https://uio.instructure.com/courses/44675/discussion_topics/295673))
 
 [TEK5030]: https://www.uio.no/studier/emner/matnat/its/TEK5030/
 [conan]: https://tek5030.github.io/tutorial/conan.html
