@@ -29,7 +29,7 @@ if (NOT OpenCV_LIBS)
 endif()
 
 # Add an executable target to the project with the specified source files.
-add_executable(${PROJECT_NAME}
+add_executable(${exe_name}
   main.cpp
   attitude.h
   attitude.cpp
@@ -52,7 +52,7 @@ add_executable(${PROJECT_NAME}
   )
 
 # Specify libraries that will be linked with the executable target.
-target_link_libraries(${PROJECT_NAME}
+target_link_libraries(${exe_name}
   ${OpenCV_LIBS}
   ${GeographicLib_LIBRARIES}
   Sophus::Sophus
