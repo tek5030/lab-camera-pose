@@ -1,0 +1,28 @@
+{
+    "image": "tek5030/devcontainer:latest",
+    "runArgs": [
+        "--rm",
+        "--device-cgroup-rule=c 81:* rmw",
+        "--device-cgroup-rule=c 189:* rmw"
+    ],
+    "containerEnv": {
+        "DISPLAY": "${localEnv:DISPLAY}",
+        "XDG_RUNTIME_DIR": "${localEnv:XDG_RUNTIME_DIR}"
+    },
+    "mounts": [
+        "type=bind,source=/dev,target=/dev",
+        "type=bind,source=/tmp/.X11-unix,target=/tmp/.X11-unix",
+        "type=bind,source=${localEnv:XAUTHORITY},target=${localEnv:XAUTHORITY}",
+        "type=bind,source=${localEnv:XDG_RUNTIME_DIR},target=${localEnv:XDG_RUNTIME_DIR}"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools-extension-pack",
+                "azuretools.vscode-docker"
+            ]
+        }
+    }
+}
