@@ -6,6 +6,9 @@ In this lab we will experiment with poses in different coordinate frames togethe
 
 ![Holmenkollen in 3D with camera trajectory](lab-guide/img/holmenkollen-3d.png)
 
+
+**Start** by cloning this repository on your machine. 
+
 Then, open the lab project in CLion using the cmake-file in the base directory:
 `lab-camera-pose/CMakeLists.txt`.
 If you are uncertain about how this is done, please take a look at [the intro lab].
@@ -35,5 +38,4 @@ Start the lab by going to the [first step](lab-guide/1-get-an-overview.md).
 ---
 
 [TEK5030]: https://www.uio.no/studier/emner/matnat/its/TEK5030/
-[conan]: https://tek5030.github.io/tutorial/conan.html
 [the intro lab]: https://github.com/tek5030/lab-intro/blob/master/cpp/lab-guide/1-open-project-in-clion.md
