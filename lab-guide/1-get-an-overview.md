@@ -54,7 +54,7 @@ We have chosen to distribute the code on the following files:
 - *intrinsics.h, intrinsics.cpp*
   
   Represents the intrinsic calibration parameters for a camera. 
-  You will be responsible for converting these to the camera calibration matrix **K** and an [OpenCV distortion coefficient vector](https://docs.opencv.org/4.5.5/d9/d0c/group__calib3d.html).
+  You will be responsible for converting these to the camera calibration matrix **K** and an [OpenCV distortion coefficient vector].
 
 - *local_coordinate_system.h, local_coordinate_system.cpp*
   
@@ -67,7 +67,9 @@ We have chosen to distribute the code on the following files:
 
 - *viewer_3d.h, viewer_3d.cpp*
   
-  Uses the OpenCV module [viz3d](https://docs.opencv.org/4.5.5/d1/d19/group__viz.html) to visualize results in 3D.
+  Uses the OpenCV module [viz3d] to visualize results in 3D.
 
 Please continue to the [next step](2-from-geographical-coordinates-to-pixels.md) to get started!
 
+[OpenCV distortion coefficient vector]: https://docs.opencv.org/4.9.0/d9/d0c/group__calib3d.html
+[viz3d]: https://docs.opencv.org/4.9.0/d1/d19/group__viz.html

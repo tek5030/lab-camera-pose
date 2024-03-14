@@ -65,7 +65,7 @@ Before we can project world points into the images, we need to undistort them.
 Why?
 
 The calibration parameters have been read into `Intrinsics` objects. 
-To use them, we need to finish `Intrinsics::toCalibrationMatrix` to return the camera calibration matrix **K** and `Intrinsics::toDistortionVector` to return an [OpenCV distortion coefficient vector](https://docs.opencv.org/4.5.5/d9/d0c/group__calib3d.html).
+To use them, we need to finish `Intrinsics::toCalibrationMatrix` to return the camera calibration matrix **K** and `Intrinsics::toDistortionVector` to return an [OpenCV distortion coefficient vector](https://docs.opencv.org/4.9.0/d9/d0c/group__calib3d.html).
 We can then undistort the image using `PerspectiveCameraModel`.
 Take a look at the documentation in [perspective_camera_model.h](../perspective_camera_model.h).
 
